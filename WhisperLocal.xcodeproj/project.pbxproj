@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00ACD5C175FC49756F3C17A8 /* ggml-threading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25B43C1EDA7022408A8DB9B /* ggml-threading.cpp */; };
+		0F42C7B90171FDDAB5988FF1 /* ggml-quants.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F47C6A8F5EB35DF949A2FF0 /* ggml-quants.c */; };
+		25A28A6EEA1318ECF2581EA4 /* ggml-large-v3-turbo.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7FB24E56F8B2964E44E07A7E /* ggml-large-v3-turbo.bin */; };
+		3B920BAEF329110718CD8B87 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = C6AE053874D7077BB23553D7 /* ggml.c */; };
+		4046B1538F7BCF4D0BC8DCE6 /* ggml-base.bin in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B1B2ADB8B03F1D91BD561 /* ggml-base.bin */; };
+		40540BFB77B04D3C97166DC3 /* ggml-large-v3.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0F4032606F08E205F11BACF0 /* ggml-large-v3.bin */; };
+		5272175DCFFA90BDE35EA3FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5D4D0330BD2F9C1F467969 /* Assets.xcassets */; };
+		530B72018124DD7906078E8C /* ggml-alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = F740B093CB6BFDF74625F3AC /* ggml-alloc.c */; };
+		61B3517D9820BB25C511AB8A /* TranscribeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9AFA06FBAC0F1ED367A8C /* TranscribeViewModel.swift */; };
+		66387A27150973A72BD44002 /* WhisperCppBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 679ABB660F225395432BC1B5 /* WhisperCppBridge.cpp */; };
+		76335E282DFCC8CEE3C2908C /* WhisperEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CC2B8EAA5DD478B08C67B9 /* WhisperEngine.swift */; };
+		7A33841408120528DA175359 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB2D0F98EE5454472A75A5 /* ContentView.swift */; };
+		7D29FB63D0AA2DFAF48F01C6 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445AB2DDEFA69A9BAEB8916 /* AudioRecorder.swift */; };
+		9561435E0ABC75E233511D40 /* ggml-backend-reg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFE8928BA85494F68BB33DA9 /* ggml-backend-reg.cpp */; };
+		BE026C377494DE424640A65B /* whisper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FF9B8F9B888256D9A371102 /* whisper.cpp */; };
+		D7E1A589160FB0C4474CD619 /* ggml-backend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65170F89A663FD47A2C45ABD /* ggml-backend.cpp */; };
+		DCD16220C6447DCA3BD6CCC6 /* WhisperLocalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC786C1FD3C19C4EA2F3C5AF /* WhisperLocalApp.swift */; };
+		E170AF42468FAB2A3B555D06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2568CF1A1B84D19509197CCA /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008597F649ADAFAA4EB618D8 /* ggml-threading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-threading.h"; sourceTree = "<group>"; };
+		030BA8A4D88AE48D0717B8F7 /* ggml-backend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-backend.h"; sourceTree = "<group>"; };
+		06B115E7FB2F423B3C69569B /* ggml-common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-common.h"; sourceTree = "<group>"; };
+		0B3E599588CB011AF39AA040 /* ggml-backend-impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-backend-impl.h"; sourceTree = "<group>"; };
+		0F4032606F08E205F11BACF0 /* ggml-large-v3.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-large-v3.bin"; sourceTree = "<group>"; };
+		112E8E97C7A65EA267BA6346 /* ggml-sycl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-sycl.h"; sourceTree = "<group>"; };
+		1803D85CFDC129CEA3428EB9 /* ggml-cpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-cpp.h"; sourceTree = "<group>"; };
+		1A1B4B86F2D84F16A4DEE924 /* WhisperCppBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhisperCppBridge.h; sourceTree = "<group>"; };
+		1FF9B8F9B888256D9A371102 /* whisper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = whisper.cpp; sourceTree = "<group>"; };
+		222BD35A7055F90E081DA29A /* whisper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whisper.h; sourceTree = "<group>"; };
+		2568CF1A1B84D19509197CCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CB9AFA06FBAC0F1ED367A8C /* TranscribeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeViewModel.swift; sourceTree = "<group>"; };
+		350FD3870FF76869CB75B7B0 /* ggml-impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-impl.h"; sourceTree = "<group>"; };
+		4445AB2DDEFA69A9BAEB8916 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		45C39CFECA628B36FCD6994F /* ggml-opencl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-opencl.h"; sourceTree = "<group>"; };
+		55C8B4F1D023A0FF11A76262 /* ggml-blas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-blas.h"; sourceTree = "<group>"; };
+		5F47C6A8F5EB35DF949A2FF0 /* ggml-quants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "ggml-quants.c"; sourceTree = "<group>"; };
+		65170F89A663FD47A2C45ABD /* ggml-backend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-backend.cpp"; sourceTree = "<group>"; };
+		679ABB660F225395432BC1B5 /* WhisperCppBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WhisperCppBridge.cpp; sourceTree = "<group>"; };
+		6B06DF389C54189EF47E651F /* ggml-alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-alloc.h"; sourceTree = "<group>"; };
+		6E331947894E23767860986B /* ggml-opt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-opt.h"; sourceTree = "<group>"; };
+		7FA1FCA2BA35EEB240D59F8A /* ggml-zdnn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-zdnn.h"; sourceTree = "<group>"; };
+		7FB24E56F8B2964E44E07A7E /* ggml-large-v3-turbo.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-large-v3-turbo.bin"; sourceTree = "<group>"; };
+		8998830A1F2C8AF5CAE750B8 /* ggml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggml.h; sourceTree = "<group>"; };
+		8BDB2D0F98EE5454472A75A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92F1D8BE40B83594AC54A93D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E8B1B2ADB8B03F1D91BD561 /* ggml-base.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-base.bin"; sourceTree = "<group>"; };
+		9FBB4D56D250E4352F464B70 /* ggml-cpu-impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-cpu-impl.h"; sourceTree = "<group>"; };
+		AA5D4D0330BD2F9C1F467969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1C5354ECCF377D903C03AFD /* ggml-cann.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-cann.h"; sourceTree = "<group>"; };
+		B68D514432C86F1DA004819F /* ggml-cuda.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-cuda.h"; sourceTree = "<group>"; };
+		C452F69DE0DBBCA12346DE39 /* gguf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gguf.h; sourceTree = "<group>"; };
+		C4EE46D5689318EDB15D391F /* ggml-vulkan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-vulkan.h"; sourceTree = "<group>"; };
+		C6AE053874D7077BB23553D7 /* ggml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ggml.c; sourceTree = "<group>"; };
+		CC9CC2C012B273D2AD4BA145 /* whisper-arch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whisper-arch.h"; sourceTree = "<group>"; };
+		D036D4D666946E1E4C5A30F9 /* WhisperLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhisperLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC2B8EAA5DD478B08C67B9 /* WhisperEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperEngine.swift; sourceTree = "<group>"; };
+		D6BA13AA6546C59B78663290 /* ggml-webgpu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-webgpu.h"; sourceTree = "<group>"; };
+		D6E719A9984FF1173C740397 /* WhisperLocal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhisperLocal-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD437E98A3ADA03D4F3F37DC /* ggml-cpu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-cpu.h"; sourceTree = "<group>"; };
+		E25B43C1EDA7022408A8DB9B /* ggml-threading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-threading.cpp"; sourceTree = "<group>"; };
+		EC786C1FD3C19C4EA2F3C5AF /* WhisperLocalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperLocalApp.swift; sourceTree = "<group>"; };
+		F1FA4F94CAA793AA411423BB /* ggml-rpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-rpc.h"; sourceTree = "<group>"; };
+		F740B093CB6BFDF74625F3AC /* ggml-alloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "ggml-alloc.c"; sourceTree = "<group>"; };
+		F92F6D4AF181587D635ABBCE /* ggml-quants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-quants.h"; sourceTree = "<group>"; };
+		FB5BBD78DCAD8BF2FA3ED8D5 /* ggml-metal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-metal.h"; sourceTree = "<group>"; };
+		FFE8928BA85494F68BB33DA9 /* ggml-backend-reg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-backend-reg.cpp"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0B323B3126E2E311DB7C5B5E /* WhisperCpp */ = {
+			isa = PBXGroup;
+			children = (
+				F740B093CB6BFDF74625F3AC /* ggml-alloc.c */,
+				6B06DF389C54189EF47E651F /* ggml-alloc.h */,
+				0B3E599588CB011AF39AA040 /* ggml-backend-impl.h */,
+				FFE8928BA85494F68BB33DA9 /* ggml-backend-reg.cpp */,
+				65170F89A663FD47A2C45ABD /* ggml-backend.cpp */,
+				030BA8A4D88AE48D0717B8F7 /* ggml-backend.h */,
+				55C8B4F1D023A0FF11A76262 /* ggml-blas.h */,
+				B1C5354ECCF377D903C03AFD /* ggml-cann.h */,
+				06B115E7FB2F423B3C69569B /* ggml-common.h */,
+				1803D85CFDC129CEA3428EB9 /* ggml-cpp.h */,
+				9FBB4D56D250E4352F464B70 /* ggml-cpu-impl.h */,
+				DD437E98A3ADA03D4F3F37DC /* ggml-cpu.h */,
+				B68D514432C86F1DA004819F /* ggml-cuda.h */,
+				350FD3870FF76869CB75B7B0 /* ggml-impl.h */,
+				FB5BBD78DCAD8BF2FA3ED8D5 /* ggml-metal.h */,
+				45C39CFECA628B36FCD6994F /* ggml-opencl.h */,
+				6E331947894E23767860986B /* ggml-opt.h */,
+				5F47C6A8F5EB35DF949A2FF0 /* ggml-quants.c */,
+				F92F6D4AF181587D635ABBCE /* ggml-quants.h */,
+				F1FA4F94CAA793AA411423BB /* ggml-rpc.h */,
+				112E8E97C7A65EA267BA6346 /* ggml-sycl.h */,
+				E25B43C1EDA7022408A8DB9B /* ggml-threading.cpp */,
+				008597F649ADAFAA4EB618D8 /* ggml-threading.h */,
+				C4EE46D5689318EDB15D391F /* ggml-vulkan.h */,
+				D6BA13AA6546C59B78663290 /* ggml-webgpu.h */,
+				7FA1FCA2BA35EEB240D59F8A /* ggml-zdnn.h */,
+				C6AE053874D7077BB23553D7 /* ggml.c */,
+				8998830A1F2C8AF5CAE750B8 /* ggml.h */,
+				C452F69DE0DBBCA12346DE39 /* gguf.h */,
+				CC9CC2C012B273D2AD4BA145 /* whisper-arch.h */,
+				1FF9B8F9B888256D9A371102 /* whisper.cpp */,
+				222BD35A7055F90E081DA29A /* whisper.h */,
+				679ABB660F225395432BC1B5 /* WhisperCppBridge.cpp */,
+				1A1B4B86F2D84F16A4DEE924 /* WhisperCppBridge.h */,
+				D6E719A9984FF1173C740397 /* WhisperLocal-Bridging-Header.h */,
+			);
+			path = WhisperCpp;
+			sourceTree = "<group>";
+		};
+		385B206511F5F516C34F80D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B1B2ADB8B03F1D91BD561 /* ggml-base.bin */,
+				7FB24E56F8B2964E44E07A7E /* ggml-large-v3-turbo.bin */,
+				0F4032606F08E205F11BACF0 /* ggml-large-v3.bin */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44A2C10DB59A7FCABBE87DB8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D4D0330BD2F9C1F467969 /* Assets.xcassets */,
+				92F1D8BE40B83594AC54A93D /* Info.plist */,
+				7EBB6D9A737ADA87DEA52772 /* App */,
+				97871556FCB535BDA9460E38 /* Core */,
+				E0DCC8702C5E004D435ECCCC /* Features */,
+				385B206511F5F516C34F80D9 /* Models */,
+				4DAAEBEFA2659190440B7D0B /* PreviewContent */,
+				0B323B3126E2E311DB7C5B5E /* WhisperCpp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		49405430ABD2BE3BBF5DF1EC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4445AB2DDEFA69A9BAEB8916 /* AudioRecorder.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		4DAAEBEFA2659190440B7D0B /* PreviewContent */ = {
+			isa = PBXGroup;
+			children = (
+				2568CF1A1B84D19509197CCA /* Preview Assets.xcassets */,
+			);
+			path = PreviewContent;
+			sourceTree = "<group>";
+		};
+		7EBB6D9A737ADA87DEA52772 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EC786C1FD3C19C4EA2F3C5AF /* WhisperLocalApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		97871556FCB535BDA9460E38 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				49405430ABD2BE3BBF5DF1EC /* Audio */,
+				F7FE09EDD4B3EAB496E2CEA0 /* Whisper */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		983FF10581582ABA28517D2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D036D4D666946E1E4C5A30F9 /* WhisperLocal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D66047390090BE5F806464E /* Transcribe */ = {
+			isa = PBXGroup;
+			children = (
+				8BDB2D0F98EE5454472A75A5 /* ContentView.swift */,
+				2CB9AFA06FBAC0F1ED367A8C /* TranscribeViewModel.swift */,
+			);
+			path = Transcribe;
+			sourceTree = "<group>";
+		};
+		9F04FBE5896085077AB3DE23 = {
+			isa = PBXGroup;
+			children = (
+				44A2C10DB59A7FCABBE87DB8 /* Sources */,
+				983FF10581582ABA28517D2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0DCC8702C5E004D435ECCCC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9D66047390090BE5F806464E /* Transcribe */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F7FE09EDD4B3EAB496E2CEA0 /* Whisper */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC2B8EAA5DD478B08C67B9 /* WhisperEngine.swift */,
+			);
+			path = Whisper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0D2ABE644389D35D8964EBD /* WhisperLocal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE4DE226FFCF51506B27845 /* Build configuration list for PBXNativeTarget "WhisperLocal" */;
+			buildPhases = (
+				81E85AFB47DE9376D4438A0C /* Sources */,
+				AB9EC657F04C4BC1AC8BBE18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhisperLocal;
+			productName = WhisperLocal;
+			productReference = D036D4D666946E1E4C5A30F9 /* WhisperLocal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2FB6AF18A2DC3B034D68CB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = F15A5C628E6F9362E6449999 /* Build configuration list for PBXProject "WhisperLocal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9F04FBE5896085077AB3DE23;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D2ABE644389D35D8964EBD /* WhisperLocal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9EC657F04C4BC1AC8BBE18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5272175DCFFA90BDE35EA3FD /* Assets.xcassets in Resources */,
+				E170AF42468FAB2A3B555D06 /* Preview Assets.xcassets in Resources */,
+				4046B1538F7BCF4D0BC8DCE6 /* ggml-base.bin in Resources */,
+				25A28A6EEA1318ECF2581EA4 /* ggml-large-v3-turbo.bin in Resources */,
+				40540BFB77B04D3C97166DC3 /* ggml-large-v3.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81E85AFB47DE9376D4438A0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D29FB63D0AA2DFAF48F01C6 /* AudioRecorder.swift in Sources */,
+				7A33841408120528DA175359 /* ContentView.swift in Sources */,
+				61B3517D9820BB25C511AB8A /* TranscribeViewModel.swift in Sources */,
+				66387A27150973A72BD44002 /* WhisperCppBridge.cpp in Sources */,
+				76335E282DFCC8CEE3C2908C /* WhisperEngine.swift in Sources */,
+				DCD16220C6447DCA3BD6CCC6 /* WhisperLocalApp.swift in Sources */,
+				530B72018124DD7906078E8C /* ggml-alloc.c in Sources */,
+				9561435E0ABC75E233511D40 /* ggml-backend-reg.cpp in Sources */,
+				D7E1A589160FB0C4474CD619 /* ggml-backend.cpp in Sources */,
+				0F42C7B90171FDDAB5988FF1 /* ggml-quants.c in Sources */,
+				00ACD5C175FC49756F3C17A8 /* ggml-threading.cpp in Sources */,
+				3B920BAEF329110718CD8B87 /* ggml.c in Sources */,
+				BE026C377494DE424640A65B /* whisper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2ECEBDCF9898E93CE6991913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = Sources/PreviewContent;
+				DEVELOPMENT_TEAM = NUXPGS3D6L;
+				HEADER_SEARCH_PATHS = Sources/WhisperCpp;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.whisperlocal;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WhisperCpp/WhisperLocal-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D8673E7A98E84023E4C0242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_SDK = iphoneos;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		508BF0A1929D9481178C4224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_SDK = iphoneos;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		9A05DD3502EDD550809974E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = Sources/PreviewContent;
+				DEVELOPMENT_TEAM = NUXPGS3D6L;
+				HEADER_SEARCH_PATHS = Sources/WhisperCpp;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wno-unused-function",
+					"-Wno-unused-variable",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.whisperlocal;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WhisperCpp/WhisperLocal-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FE4DE226FFCF51506B27845 /* Build configuration list for PBXNativeTarget "WhisperLocal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ECEBDCF9898E93CE6991913 /* Debug */,
+				9A05DD3502EDD550809974E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F15A5C628E6F9362E6449999 /* Build configuration list for PBXProject "WhisperLocal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508BF0A1929D9481178C4224 /* Debug */,
+				4D8673E7A98E84023E4C0242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2FB6AF18A2DC3B034D68CB8 /* Project object */;
+}

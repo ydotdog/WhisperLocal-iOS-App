@@ -1,0 +1,59 @@
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+
+# Build artifacts
+build/
+*.o
+*.dylib
+*.so
+*.a
+*.d
+*.dia
+
+# Model files (too large for GitHub)
+*.bin
+Models/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+test_bridge.o
+
+# XcodeGen
+project.yml
+
+
